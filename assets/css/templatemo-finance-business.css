@@ -1053,7 +1053,7 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
+	background-image: url(../images/slide_04.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1228,8 +1228,11 @@ footer .contact-form button.filled-button:hover {
 
 /* Responsive Style */
 @media (max-width: 768px) {
-	.sub-header {
+	/*.sub-header {
 		display: none;
+	}*/
+	.sub-header-social{
+		visibility:hidden;
 	}
 	.Modern-Slider .item h6 {
 	  margin-bottom: 15px;
@@ -1297,6 +1300,9 @@ footer .contact-form button.filled-button:hover {
 }
 
 @media (max-width: 992px) {
+	.sub-header-social{
+		visibility:visible;
+	}
 	.navbar .navbar-brand {
 		position: absolute;
 		left: 30px;
@@ -1336,4 +1342,24 @@ footer .contact-form button.filled-button:hover {
 		color: #a4c639!important;
 		border-bottom: none!important;
 	}
+}
+
+.sub-header-social{
+	
+}
+
+
+/**/
+.fa-social{
+	font-size:20px;
+	color:#a4c639;
+}
+	  
+.fa-social:hover{
+	color:red;
+}
+
+.fluid-container-padding{
+	padding-left:0px;
+	padding-right:0px;
 }
