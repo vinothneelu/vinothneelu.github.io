@@ -67,7 +67,7 @@
          			$("#month").append('<option value="' + t + '">' + t + "</option>");
          		}
              }
-             for (var n = 2021; n >= 2014; n--) {
+             for (var n = 2021; n >= 1990; n--) {
          		if(year == n) {
          			$("#year").append('<option value="' + n + '" selected="selected">' + n + "</option>");
          		}
@@ -94,23 +94,22 @@
       <!-- Header -->
       <div class="sub-header">
          <div class="container-fluid">
-            <div class="row">
+		 <div class="row">
+        <div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+            <div class="d-flex justify-content-between align-items-center breaking-news">
+				<div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-success py-2 text-white px-1 news"><span class="d-flex align-items-center"><b>News</b></span></div>
+                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#" colo" style="color:white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a> <span class="dot"></span> <a href="#" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a> <span class="dot"></span> <a href="#" style="color:white">Duis aute irure dolor in reprehenderit in voluptate velit esse </a> </marquee>
+            </div>
+        </div>
+    </div>
+            <!--<div class="row">
                <div class="col-md-12 col-xs-12 fluid-container-padding">
                   <ul class="left-info">
                      <li><a href="#"><i class="fa fa-clock-o"></i>Morning 06:00-10.30</a></li>
-					 <li><a href="#"><i class="fa fa-clock-o"></i>Evening 05:00-08:00</a></li>
-                     <!--<li><a href="#"><i class="fa fa-phone"></i>917-662-9332</a></li>
+					 <li><a href="#" class="blink_me"><i class="fa fa-clock-o"></i>Evening 05:00-08:00</a></li>
                   </ul>
                </div>
-               <div class="col-md-2">
-                  <ul class="right-icons">
-                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                     <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                     <li><a href="#"><i class="fa fa-envelope"></i></a></li>-->
-                  </ul>
-               </div>
-            </div>
+            </div>-->
          </div>
       </div>
       <header class="">
@@ -132,9 +131,6 @@
                      <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                      </li>
-                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
-                        </li>                           -->
                      <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                      </li>
@@ -159,9 +155,9 @@
                <div class="img-fill">
                   <div class="text-content">
                      <!-- <h6>we are ready to help you</h6> -->
-                     <h4>SriOmSakthiVinayakar</h4>
+                     <!--<h4>SriOmSakthiVinayakar</h4>-->
                      <!-- <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. This is a multiple-page version with different HTML pages. <a href="one-page.html">One-page version</a> is available as of 2021 February.</p> -->
-                     <a href="contact.html" class="filled-button">Contact Us</a>
+                     <!--<a href="contact.html" class="filled-button">Contact Us</a>-->
                   </div>
                </div>
             </div>
@@ -171,9 +167,9 @@
                <div class="img-fill">
                   <div class="text-content">
                      <!-- <h6>we are here to support you</h6> -->
-                     <h4>SriOmSakthiVinayakar</h4>
+                     <!--<h4>SriOmSakthiVinayakar</h4>-->
                      <!-- <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this template ZIP file on any template download website. Please contact TemplateMo for more detail.</p> -->
-                     <a href="contact.html" class="filled-button">Contact Us</a>
+                     <!--<a href="contact.html" class="filled-button">Contact Us</a>-->
                   </div>
                </div>
             </div>
@@ -183,9 +179,9 @@
                <div class="img-fill">
                   <div class="text-content">
                      <!-- <h6>we have a solid background</h6> -->
-                     <h4>SriOmSakthiVinayakar</h4>
+                     <!--<h4>SriOmSakthiVinayakar</h4>-->
                      <!-- <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p> -->
-                     <a href="contact.html" class="filled-button">Contact Us</a>
+                     <!--<a href="contact.html" class="filled-button">Contact Us</a>-->
                   </div>
                </div>
             </div>
@@ -261,7 +257,8 @@
                <option value="year">-Year-</option>
             </select>
             &nbsp;&nbsp;&nbsp;
-            <input type="submit" name="button" id="button" value="Show Date" onClick="showDate();"><span id="error" ></span>
+			<button type="button" class="btn btn-success" onClick="showDate();" style="height: 27px;font-size: 10px;margin-bottom: 5px;font-weight: 600;border-color: transparent !important;">Show Date</button><span id="error" ></span>
+            <!--<input type="submit" name="button" id="button" value="Show Date" onClick="showDate();"><span id="error" ></span>-->
          </p>
          <p>&nbsp;</p>
          <div id="image" class="text-center"></div>
@@ -454,20 +451,39 @@
          </div>
       </div>
       <!-- Footer Starts Here -->
-      <footer style="display: none;">
+      <footer style="display: block;">
          <div class="container">
             <div class="row">
-               <div class="col-md-3 footer-item">
-                  <h4>SriOmSakthiVinayagar</h4>
+               <div class="col-md-4 footer-item">
+                  <h4>SRIOMSAKTHIVINAYAKAR</h4>
                   <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
                   <ul class="social-icons">
                      <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                     <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                   </ul>
                </div>
-               <div class="col-md-3 footer-item">
+			   
+			   <div class="col-md-4">
+                    <div class="contact-details">
+                        <h4>Our Temple Location</h4>
+                        <ul class="contact">
+                            <li>
+                                <p><i class="fa fa-map-marker"></i> G.N CHETTY ROAD,T.NAGAR,CHENNAI-17, <br>
+                                 </p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-phone"></i> 917-662-9332 / 988-450-7515</p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-envelope" style="margin-bottom:40px;"></i> <a href="">Sriomsakthivinayakar@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               <!--<div class="col-md-3 footer-item">
                   <h4>Useful Links</h4>
                   <ul class="menu-list">
                      <li><a href="#">Vivamus ut tellus mi</a></li>
@@ -486,8 +502,8 @@
                      <li><a href="#">Contact Us</a></li>
                      <li><a href="#">Privacy Policy</a></li>
                   </ul>
-               </div>
-               <div class="col-md-3 footer-item last-item">
+               </div>-->
+               <div class="col-md-4 footer-item last-item">
                   <h4>Contact Us</h4>
                   <div class="contact-form">
                      <form id="contact footer-contact" action="" method="post">
