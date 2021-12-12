@@ -175,7 +175,7 @@ a.border-button:hover {
 
 .sub-header {
 	background-color: #a4c639;
-	height: 46px;
+	height: 63px;
 	line-height: 46px;
 }
 
@@ -230,7 +230,7 @@ a.border-button:hover {
 
 
 
-/* Header Style */
+/* Header Style transparent!important;*/
 header {
 	position: absolute;
 	z-index: 99999;
@@ -275,8 +275,8 @@ header .navbar {
 .navbar .navbar-brand h2 {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: 700;
+	font-size: 20px;
+	font-weight: 900;
 	-webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
@@ -387,15 +387,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/slide_04.jpg);
+	background-image: url(../images/slide_05.jpeg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/slide_04.jpg);
+	background-image: url(../images/slide_06.jpeg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/slide_04.jpg);
+	background-image: url(../images/slide_06.jpeg);
 }
 
 .Modern-Slider .NextArrow{
@@ -462,7 +462,7 @@ ul.slick-dots {
 .Modern-Slider .item h4 {
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 2.5px;
   color:#FFF;
@@ -746,7 +746,7 @@ ul.slick-dots {
 
 .contact-us {
 	background-color: #f7f7f7;
-	padding: 140px 0px;
+	padding: 60px 0px;
 }
 
 .contact-us .contact-form {
@@ -755,7 +755,7 @@ ul.slick-dots {
 }
 
 .callback-form {
-	margin-top: 140px;
+	margin-top: 30px;
 }
 
 .callback-form .contact-form {
@@ -766,7 +766,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form input {
-	border-radius: 20px;
+	border-radius: 10px;
 	height: 40px;
 	line-height: 40px;
 	display: inline-block;
@@ -786,7 +786,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form textarea {
-	border-radius: 20px;
+	border-radius: 10px;
 	height: 120px;
 	max-height: 200px;
 	min-height: 120px;
@@ -1053,11 +1053,11 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/slide_04.jpg);
+	background-image: url(../images/slide_05.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 230px 0px 150px 0px;
+	padding: 260px 0px 200px 0px;
 	color: #fff;
 }
 
@@ -1191,7 +1191,7 @@ footer .contact-form button.filled-button:hover {
 /* Contact Information */
 
 .contact-information {
-	margin-top: 140px;
+	margin-top: 30px;
 }
 
 .contact-information .contact-item {
@@ -1240,7 +1240,7 @@ footer .contact-form button.filled-button:hover {
 	}
 	.Modern-Slider .item h4 {
 	  margin-bottom: 25px;
-	  font-size: 28px;
+	  font-size: 20px;
 	  line-height: 36px;
 	  letter-spacing: 1px;
 	}
@@ -1362,4 +1362,35 @@ footer .contact-form button.filled-button:hover {
 .fluid-container-padding{
 	padding-left:0px;
 	padding-right:0px;
+}
+
+.blink_me {
+	animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+}
+
+@keyframes ticker {
+  0%   {margin-top: 0}
+  25%  {margin-top: -30px}
+  50%  {margin-top: -60px}
+  75%  {margin-top: -90px}
+  100% {margin-top: 0}
+}
+
+.news {
+    width: 160px
+}
+
+.news-scroll a {
+    text-decoration: none
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px !important;
+    background-color: rgb(207, 23, 23);
+    border-radius: 50%;
+    display: inline-block
 }
